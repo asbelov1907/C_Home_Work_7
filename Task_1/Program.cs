@@ -1,5 +1,5 @@
 ﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-Console.WriteLine("Hello, World!");
+
 
 void newArray(int sizeM, int sizeN)
 {
