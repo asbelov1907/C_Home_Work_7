@@ -25,15 +25,15 @@ void Average(int[,] array)
 {
     double numberAverage;
     double resultAverage;
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(1); i++)
     {
         numberAverage = 0;
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(0); j++)
         {
-           numberAverage += array[i,j];
+           numberAverage += array[j,i];
         
         }
-        resultAverage=Math.Round(numberAverage/array.GetLength(1),2);
+        resultAverage=Math.Round(numberAverage/array.GetLength(0),2);
         Console.WriteLine(resultAverage);
     }
 }
